@@ -1,0 +1,29 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+html, body, .container-fluid {
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  > .row.textarea {
+    &, & div {
+      height: 100%;
+    }
+  }
+}
+
+.scss-input-wrapper,
+.css-output-wrapper {
+  height: 100%;
+  @include span-columns(12);
+  @include media(768px) {
+    @include span-columns(6);
+  }
+  textarea {
+    height: 90%;
+    width: 100%;
+  }
+}
