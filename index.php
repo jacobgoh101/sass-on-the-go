@@ -17,6 +17,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="plugin/sass.js-master/dist/sass.js"></script>
   <script src="plugin/sass.js-master/dist/sass.worker.js"></script>
+  <script src="plugin/ace-builds-master/src-min-noconflict/ace.js"></script>
 </head>
 <body>
   <div class="container-fluid">
