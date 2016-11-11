@@ -57,6 +57,12 @@ class App extends React.Component {
       scss
     });
   }
+  componentDidMount(){
+    $('#scss-input').numberedtextarea();
+    let editor = new Behave({
+      textarea: document.getElementById('scss-input')
+    });
+  }
   render() {
     return (
       <div className="row textarea">
@@ -110,11 +116,11 @@ const codesReducer = (state = {
           let failureMessage = "ERROR WHILE COMPILING\n";
           failureMessage += "line: " + result.line + "\n";
           failureMessage += "message: " + result.message + "\n";
-            store.dispatch({
-              type: 'COMPILE',
-              status: 'FAILURE',
-              failureMessage
-            });
+          store.dispatch({
+            type: 'COMPILE',
+            status: 'FAILURE',
+            failureMessage
+          });
         }else{
           store.dispatch({
             type: 'COMPILE',

@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="plugin/font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="plugin/numberedTextarea/jquery.numberedtextarea.css">
   <script src="js/react.js"></script>
   <script src="js/react-dom.js"></script>
   <script src="js/redux.min.js"></script>
@@ -17,7 +18,9 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="plugin/sass.js-master/dist/sass.js"></script>
   <script src="plugin/sass.js-master/dist/sass.worker.js"></script>
-  <script src="plugin/ace-builds-master/src-min-noconflict/ace.js"></script>
+  <script src="plugin/numberedTextarea/jquery.numberedtextarea.js"></script>
+  <script src="plugin/Behave.js-master/behave.js"></script>
+  <script src="js/autoprefixer.min.js"></script>
 </head>
 <body>
   <div class="container-fluid">
